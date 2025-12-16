@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Riddle Generator</title>
+  <style>
+    body{font-family:Arial, sans-serif; background:#f8f8fb; padding:20px;}
+    .app{max-width:700px;margin:0 auto;background:white;padding:18px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+    button{padding:8px 12px;margin-right:8px;}
+    .answer{display:none;color:#2a6;font-weight:600;margin-top:8px;}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h2>Riddle Generator</h2>
+    <div id="q">Press 'New Riddle' to start.</div>
+    <button id="new">New Riddle</button>
+    <button id="show">Show answer</button>
+    <div id="a" class="answer"></div>
+    <p><a href="scratch.html">Back to scratch page</a></p>
+  </div>
+
+  <script>
+    const riddles = [
+      {q:"I speak without a mouth and hear without ears. What am I?", a:"An echo"},
+      {q:"What has keys but can't open locks?", a:"A keyboard"}
+    ];
+    let cur=null;
+    document.getElementById('new').onclick = ()=> {
+      cur = riddles[Math.floor(Math.random()*riddles.length)];
+      document.getElementById('q').textContent = cur.q;
+      document.getElementById('a').style.display='none';
+    };
+    document.getElementById('show').onclick = ()=> {
+      if(!cur){ document.getElementById('a').textContent='Press New Riddle first.'; document.getElementById('a').style.display='block'; return; }
+      document.getElementById('a').textContent = cur.a; document.getElementById('a').style.display='block';
+    };
+  </script>
+</body>
+</html>

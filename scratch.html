@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header class="topbar">
     <div class="container">
-      <h1>Scratch Page</h1>
+      <h1>My Web Development Showcase</h1>
       <nav>
         <a href="index.html" style="color:white;">Home</a> |
         <a href="resume.html" style="color:white;">Résumé</a> |
@@ -18,73 +19,101 @@
   </header>
 
   <main class="container">
+
+    <!-- Introduction -->
     <div class="card">
-      <h2 id="my-anchor">About this from-scratch page</h2>
-      <p>This page was created from a blank HTML file and includes the required elements.</p>
+      <h2 id="my-anchor">About this From-Scratch Page</h2>
+      <p>
+        This page demonstrates my web development skills using HTML, CSS, and embedded media.
+        You will find an original image, an embedded YouTube video, an interactive Tableau graph,
+        and a demonstration of nested lists. Each element highlights my ability to write
+        code from scratch and structure content clearly.
+      </p>
     </div>
 
+    <!-- Featured Image -->
     <div class="card">
-      <h3>Image (not from Bootstrap theme)</h3>
+      <h3>Featured Image</h3>
+      <p>
+        The image below represents one of my personal interests: track and field. 
+        It demonstrates proper scaling, positioning, and inclusion of media not from a pre-built theme.
+      </p>
       <img src="images/T-and-F-image.jpg" alt="Track and Field" class="responsive-img">
     </div>
 
+    <!-- Embedded Video -->
     <div class="card">
-  <h3>Embedded YouTube Video</h3>
-  <div class="video-wrapper">
-    <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/k0pvCEAaM3g"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
-  </div>
-</div>
+      <h3>Embedded Video</h3>
+      <p>
+        This embedded YouTube video is an example of including multimedia content to enhance a web page.
+      </p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/k0pvCEAaM3g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
+    <!-- Nested Lists -->
     <div class="card">
-  <h3>Website Development Process</h3>
-  <ol>
-    <li>Planning the Project
-      <ul>
-        <li>Reviewed assignment requirements</li>
-        <li>Designed site layout and navigation</li>
-      </ul>
-    </li>
-    <li>Building and Publishing the Site</li>
-  </ol>
-</div>
+      <h3>Website Development Process</h3>
+      <p>
+        This nested list demonstrates ordered and unordered list usage in HTML:
+      </p>
+      <ol>
+        <li>Planning the Project
+          <ul>
+            <li>Reviewed assignment requirements</li>
+            <li>Designed site layout and navigation</li>
+          </ul>
+        </li>
+        <li>Building and Publishing the Site</li>
+      </ol>
+    </div>
 
-    <div class='tableauPlaceholder' id='viz1765925535972' style='position: relative'>
-  <noscript>
-    <a href='#'>
-      <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/El/EliteTrackandFieldAthletes/Dashboard1/1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz'  style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='EliteTrackandFieldAthletes/Dashboard1' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/El/EliteTrackandFieldAthletes/Dashboard1/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-  </object>
-</div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1765925535972');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '100%';   // always full width of container
-vizElement.style.height = '600px'; // adjust height to fit nicely                     
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+    <!-- Tableau Graph -->
+    <div class="card">
+      <h3>Interactive Tableau Graph</h3>
+      <p>
+        The interactive graph below visualizes elite track and field athlete performance metrics.
+        It demonstrates embedding third-party interactive content from Tableau.
+      </p>
+      <div class='tableauPlaceholder' id='viz1765925535972' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/El/EliteTrackandFieldAthletes/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='EliteTrackandFieldAthletes/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/El/EliteTrackandFieldAthletes/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1765925535972');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';   // full width of container
+        vizElement.style.height = '600px';  // fixed height for readability
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
 
   </main>
 </body>
